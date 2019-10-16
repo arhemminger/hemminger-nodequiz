@@ -1,0 +1,59 @@
+[
+  {
+    "presentationId": 101,
+    "name": "JSON REST APIs",
+    "description": "Basic concepts and understanding of JSON REST APIs.",
+    "slides": [
+      {"image": "assets/images/q101s1.JPG"},
+      {"image": "assets/images/q101s2.JPG"},
+      {"image": "assets/images/q101s3.JPG"},
+      {"image": "assets/images/q101s4.JPG"},
+      {"image": "assets/images/q101s5.JPG"},
+      {"image": "assets/images/q101s6.JPG"},
+      {"image": "assets/images/q101s7.JPG"},
+      {"image": "assets/images/q101s8.JPG"},
+      {"image": "assets/images/q101s9.JPG"},
+      {"image": "assets/images/q101s10.JPG"},
+      {"image": "assets/images/q101s11.JPG"},
+      {"image": "assets/images/q101s12.JPG"}
+    ]
+  },
+  {
+    "presentationId": 102,
+    "name": "Continuous Integration",
+    "description": "Basic concepts and understanding of Continuous Integration.",
+    "slides": [
+      {"image": "./assets/images/q102s1.JPG"},
+      {"image": "./assets/images/q102s2.JPG"},
+      {"image": "./assets/images/q102s3.JPG"},
+      {"image": "./assets/images/q102s4.JPG"},
+      {"image": "./assets/images/q102s5.JPG"},
+      {"image": "./assets/images/q102s6.JPG"},
+      {"image": "./assets/images/q102s7.JPG"},
+      {"image": "./assets/images/q102s8.JPG"},
+      {"image": "./assets/images/q102s9.JPG"},
+      {"image": "./assets/images/q102s10.JPG"},
+      {"image": "./assets/images/q102s11.JPG"},
+      {"image": "./assets/images/q102s12.JPG"}
+    ]
+  },
+  {
+    "presentationId": 103,
+    "name": "REST Methodologies",
+    "description": "Basic concepts and understanding of REST Methodologies.",
+    "slides": [
+      {"image": "./assets/images/q103s1.JPG"},
+      {"image": "./assets/images/q103s2.JPG"},
+      {"image": "./assets/images/q103s3.JPG"},
+      {"image": "./assets/images/q103s4.JPG"},
+      {"image": "./assets/images/q103s5.JPG"},
+      {"image": "./assets/images/q103s6.JPG"},
+      {"image": "./assets/images/q103s7.JPG"},
+      {"image": "./assets/images/q103s8.JPG"},
+      {"image": "./assets/images/q103s9.JPG"},
+      {"image": "./assets/images/q103s10.JPG"},
+      {"image": "./assets/images/q103s11.JPG"},
+      {"image": "./assets/images/q103s12.JPG"}
+    ]
+  }
+]
