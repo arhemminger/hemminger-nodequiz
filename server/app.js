@@ -13,11 +13,10 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const mongoose = require('mongoose');
 const Employee = require('./db-models/employee');
-const Presentation = require('./db-models/presentations');
+//const Presentation = require('./db-models/presentations');
 const Quiz = require('./db-models/quizzes');
 
-// Global variables
-const serverPort = 3000;
+const serverPort = process.env.PORT || 3000; // server port
 
 // App configurations
 let app = express();
@@ -32,7 +31,7 @@ app.use('/', express.static(path.join(__dirname, '../dist/nodequiz')));
 
 /************************* Mongoose connection***************/
 // MongoDB (Atlas) connection string
-const connString = 'mongodb+srv://dev:bu12345@nodequiz-ubbkm.mongodb.net/test?retryWrites=true&w=majority'
+const connString = 'mongodb+srv://dev:bu12345@nodequiz-ubbkm.mongodb.net/nodeQuiz?retryWrites=true&w=majority'
 
 // MongoDB connect
 mongoose.connect(connString, {promiseLibrary: require('bluebird'), useNewUrlParser: true})
@@ -113,8 +112,6 @@ app.get('/api/quizzes/:id', function(req, res, next) {
     }
   })
 });
-
-
 
 // Create Node.js server that listens on port 3000
 http.createServer(app).listen(serverPort, function() {
