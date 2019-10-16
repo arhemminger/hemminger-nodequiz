@@ -1,0 +1,84 @@
+<!--
+============================================
+; Title:  Hemminger NodeQuiz
+; Author: Andrew Hemminger
+; Date:  27 September 2019
+; Description: NodeQuiz application
+;===========================================
+-->
+<div class="heading">
+  <h1>Quiz Selection</h1>
+</div>
+
+<br>
+
+<div class="container">
+  <div class="row align-items-stretch">
+    <div class="col align-items-stretch">
+      <!-- Quiz 101 card -->
+      <mat-card class="quiz-card">
+        <mat-card-header>
+          <mat-card-title>Quiz 101</mat-card-title>
+          <mat-card-subtitle>JSON APIs</mat-card-subtitle>
+        </mat-card-header>
+        <hr>
+        <mat-card-content>
+          <p>
+            This quiz covers the concepts around JavaScript Object Notation APIs.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" class="mat-button" [routerLink]="['/presentation/101']">View Presentation</button>
+          <button mat-raised-button color="primary" class="mat-button" [routerLink]="['/quiz/101']">Take Quiz</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <!-- Quiz 102 card -->
+    <div class="col align-items-stretch">
+      <mat-card class="quiz-card">
+        <mat-card-header>
+          <mat-card-title>Quiz 102</mat-card-title>
+          <mat-card-subtitle>Continuous Integration</mat-card-subtitle>
+        </mat-card-header>
+        <hr>
+        <mat-card-content>
+          <p>
+            This quiz covers the concepts around Continuous Integration.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" class="mat-button" [routerLink]="['/presentation/102']">View Presentation</button>
+          <button mat-raised-button color="primary" class="mat-button" [routerLink]="['/quiz/102']">Take Quiz</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <!-- Quiz 103 card -->
+    <div class="col align-items-stretch">
+      <mat-card class="quiz-card">
+        <mat-card-header>
+          <mat-card-title>Quiz 103</mat-card-title>
+          <mat-card-subtitle>REST Methodologies</mat-card-subtitle>
+        </mat-card-header>
+        <hr>
+        <mat-card-content>
+          <p>
+            This quiz covers the concepts around REST Methodologies.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" class="mat-button" [routerLink]="['/presentation/103']">View Presentation</button>
+          <button mat-raised-button color="primary" class="mat-button" [routerLink]="['/quiz/103']">Take Quiz</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+  </div>
+</div>
+
+<!--  presentation -->
+<router-outlet></router-outlet>
+
+
+

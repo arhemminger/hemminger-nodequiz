@@ -1,0 +1,803 @@
+[
+  {
+    "quizId": 101,
+    "name": "JSON REST APIs",
+    "description": "This quiz covers the basic concepts and understanding around JSON REST APIs.",
+    "questions": [
+      {
+        "id": 1,
+        "text": "What does “JSON” stand for? ",
+        "answers": [
+          {
+            "id": "200",
+            "text": "Java Series Object Notation ",
+            "isCorrect": false
+          },
+          {
+            "id": "201",
+            "text": "JavaScript Object Notation",
+            "isCorrect": true
+          },
+          {
+            "id": "203",
+            "text": "Java Site Observable Numeral ",
+            "isCorrect": false
+          },
+          {
+            "id": "204",
+            "text": "JavaScript Observable Notation ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "What does the term “API” stand for? ",
+        "answers": [
+          {
+            "id": "205",
+            "text": "Application Programmable Interface ",
+            "isCorrect": false
+          },
+          {
+            "id": "206",
+            "text": "Angular Program Interface",
+            "isCorrect": false
+          },
+          {
+            "id": "207",
+            "text": "Application Programming Interface",
+            "isCorrect": true
+          },
+          {
+            "id": "208",
+            "text": "App Performance Insights",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "The JSON syntax is represented by using what?",
+        "answers": [
+          {
+            "id": "209",
+            "text": "name/value pairs",
+            "isCorrect": true
+          },
+          {
+            "id": "210",
+            "text": "XML",
+            "isCorrect": false
+          },
+          {
+            "id": "211",
+            "text": "a name",
+            "isCorrect": false
+          },
+          {
+            "id": "212",
+            "text": "a document",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "Square brackets in JSON syntax represent what?",
+        "answers": [
+          {
+            "id": "213",
+            "text": "a value",
+            "isCorrect": false
+          },
+          {
+            "id": "214",
+            "text": "an array",
+            "isCorrect": true
+          },
+          {
+            "id": "215",
+            "text": "a name",
+            "isCorrect": false
+          },
+          {
+            "id": "216",
+            "text": "a document",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "text": "Application / Server communication is comprised of what two calls?",
+        "answers": [
+          {
+            "id": "217",
+            "text": "client/server",
+            "isCorrect": false
+          },
+          {
+            "id": "218",
+            "text": "request/status",
+            "isCorrect": false
+          },
+          {
+            "id": "219",
+            "text": "application/state",
+            "isCorrect": false
+          },
+          {
+            "id": "220",
+            "text": "request/response",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "text": "JSON APIs are commonly used in what architectural style?",
+        "answers": [
+          {
+            "id": "221",
+            "text": "REST",
+            "isCorrect": true
+          },
+          {
+            "id": "222",
+            "text": "RPC",
+            "isCorrect": false
+          },
+          {
+            "id": "223",
+            "text": "GraphQL",
+            "isCorrect": false
+          },
+          {
+            "id": "224",
+            "text": "SOAP",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "text": "What are the 3 main sections that make up a JSON API response?",
+        "answers": [
+          {
+            "id": "225",
+            "text": "Status, Header, Body",
+            "isCorrect": true
+          },
+          {
+            "id": "226",
+            "text": "Type, Head, Body",
+            "isCorrect": false
+          },
+          {
+            "id": "227",
+            "text": "Status, Header, Main",
+            "isCorrect": false
+          },
+          {
+            "id": "228",
+            "text": "Type, Header, Body",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "text": "SOAP APIs are known for using ____ syntax different from JSON.",
+        "answers": [
+          {
+            "id": "229",
+            "text": "Java",
+            "isCorrect": false
+          },
+          {
+            "id": "230",
+            "text": "JavaScript",
+            "isCorrect": false
+          },
+          {
+            "id": "231",
+            "text": "XML",
+            "isCorrect": true
+          },
+          {
+            "id": "232",
+            "text": "Python",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "text": "Request headers usually start with what?",
+        "answers": [
+          {
+            "id": "233",
+            "text": "the authorization type",
+            "isCorrect": false
+          },
+          {
+            "id": "234",
+            "text": "the message body",
+            "isCorrect": false
+          },
+          {
+            "id": "235",
+            "text": "the message format",
+            "isCorrect": false
+          },
+          {
+            "id": "236",
+            "text": "the method type",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "text": "A JSON request body is usually sent with what type of method?",
+        "answers": [
+          {
+            "id": "237",
+            "text": "GET",
+            "isCorrect": false
+          },
+          {
+            "id": "238",
+            "text": "POST",
+            "isCorrect": true
+          },
+          {
+            "id": "239",
+            "text": "READ",
+            "isCorrect": false
+          },
+          {
+            "id": "240",
+            "text": "HEAD",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "quizId": 102,
+    "name": "Continuous Integration",
+    "description": "This quiz covers the basic concepts and understanding around Continuous Integration.",
+    "questions": [
+      {
+        "id": 1,
+        "text": "What are the two main types of branching strategies associated with continuous integration?",
+        "answers": [
+          {
+            "id": "241",
+            "text": "Main and Secondary",
+            "isCorrect": false
+          },
+          {
+            "id": "242",
+            "text": "Primary and Reserve",
+            "isCorrect": false
+          },
+          {
+            "id": "243",
+            "text": "Individual and Team",
+            "isCorrect": true
+          },
+          {
+            "id": "244",
+            "text": "Individual and Collective",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "What is a key factor leading to the success of continuous integration?",
+        "answers": [
+          {
+            "id": "245",
+            "text": "Automation",
+            "isCorrect": true
+          },
+          {
+            "id": "246",
+            "text": "Manual testing",
+            "isCorrect": false
+          },
+          {
+            "id": "247",
+            "text": "Manual Deployments",
+            "isCorrect": false
+          },
+          {
+            "id": "248",
+            "text": "Scrum ceremonies",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "What does continuous integration look like to a development team?",
+        "answers": [
+          {
+            "id": "249",
+            "text": "Multiple code deployments per day",
+            "isCorrect": true
+          },
+          {
+            "id": "250",
+            "text": "Manual testing",
+            "isCorrect": false
+          },
+          {
+            "id": "251",
+            "text": "Manual deployments",
+            "isCorrect": false
+          },
+          {
+            "id": "252",
+            "text": "All of the above",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "When is the ideal time to run unit tests associated with your code deployment?",
+        "answers": [
+          {
+            "id": "253",
+            "text": "During the build process",
+            "isCorrect": true
+          },
+          {
+            "id": "254",
+            "text": "During the release process",
+            "isCorrect": false
+          },
+          {
+            "id": "255",
+            "text": "When the code is committed into the master branch",
+            "isCorrect": false
+          },
+          {
+            "id": "256",
+            "text": "Once the build artifact is published",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "text": "What is a benefit of continuous integration?",
+        "answers": [
+          {
+            "id": "257",
+            "text": "Large code releases allow all your changes to be published at once",
+            "isCorrect": false
+          },
+          {
+            "id": "258",
+            "text": "Limits visibility across team ",
+            "isCorrect": false
+          },
+          {
+            "id": "259",
+            "text": "Increased time to market ",
+            "isCorrect": false
+          },
+          {
+            "id": "260",
+            "text": "Faster discovery and feedback",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "text": "What are the two main types of test automation used in continuous integration?",
+        "answers": [
+          {
+            "id": "261",
+            "text": "Manual and Unit",
+            "isCorrect": false
+          },
+          {
+            "id": "262",
+            "text": "Unit and Integration",
+            "isCorrect": true
+          },
+          {
+            "id": "263",
+            "text": "Integration ad Manual",
+            "isCorrect": false
+          },
+          {
+            "id": "264",
+            "text": "Integration and Active",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "text": "Why is test automation a part of continuous integration?",
+        "answers": [
+          {
+            "id": "265",
+            "text": "helps prevent breaking changes from being introduced",
+            "isCorrect": true
+          },
+          {
+            "id": "266",
+            "text": "It helps reduce costs by removing the need for QAs",
+            "isCorrect": false
+          },
+          {
+            "id": "267",
+            "text": "Eliminates the need for any other testing",
+            "isCorrect": false
+          },
+          {
+            "id": "268",
+            "text": "All of the above",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "text": "What happens when a test fails during continuous integration code deployment?",
+        "answers": [
+          {
+            "id": "269",
+            "text": "The build is rejected and the deployment reports and error",
+            "isCorrect": true
+          },
+          {
+            "id": "270",
+            "text": "The build is rejected, and the deployment is paused ",
+            "isCorrect": false
+          },
+          {
+            "id": "271",
+            "text": "The developer comments out the test so the deployment is able to be completed ",
+            "isCorrect": false
+          },
+          {
+            "id": "272",
+            "text": "The QA stops the deployment and reports the failure to the developer ",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "text": "Which is a non-ideal place for an approval gate during code deployment?",
+        "answers": [
+          {
+            "id": "273",
+            "text": "During the release phase between Development and Production environments",
+            "isCorrect": false
+          },
+          {
+            "id": "274",
+            "text": "On a pull request",
+            "isCorrect": false
+          },
+          {
+            "id": "275",
+            "text": "Pull request to build phase",
+            "isCorrect": false
+          },
+          {
+            "id": "276",
+            "text": "None of the above",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "text": "What types of tests are normally triggered during the release pipeline?",
+        "answers": [
+          {
+            "id": "277",
+            "text": "Functional and Integration",
+            "isCorrect": true
+          },
+          {
+            "id": "278",
+            "text": "Manual and Automated",
+            "isCorrect": false
+          },
+          {
+            "id": "279",
+            "text": "Unit and Integration",
+            "isCorrect": false
+          },
+          {
+            "id": "280",
+            "text": "Functional and Unit",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "quizId": 103,
+    "name": "REST Methodologies",
+    "description": "This quiz covers the basic concepts and understanding around REST Methodologies.",
+    "questions": [
+      {
+        "id": 1,
+        "text": "What does REST stand for?",
+        "answers": [
+          {
+            "id": "281",
+            "text": "Reactive Environment Service Type",
+            "isCorrect": false
+          },
+          {
+            "id": "282",
+            "text": "Representational State Transfer",
+            "isCorrect": true
+          },
+          {
+            "id": "283",
+            "text": "Responsive Environment Setting Type ",
+            "isCorrect": false
+          },
+          {
+            "id": "284",
+            "text": "Responsive State Transfer",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "REST is an architectural style for distributed ____________ systems.",
+        "answers": [
+          {
+            "id": "285",
+            "text": "hypermedia",
+            "isCorrect": true
+          },
+          {
+            "id": "286",
+            "text": "control",
+            "isCorrect": false
+          },
+          {
+            "id": "287",
+            "text": "server",
+            "isCorrect": false
+          },
+          {
+            "id": "288",
+            "text": "media",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "What are the 4 primary HTTP methods?",
+        "answers": [
+          {
+            "id": "289",
+            "text": "GET, UPDATE PUT, DELETE",
+            "isCorrect": false
+          },
+          {
+            "id": "290",
+            "text": "CREATE, READ, UPDATE, DELETE",
+            "isCorrect": false
+          },
+          {
+            "id": "291",
+            "text": "GET, POST, PUT, DELETE",
+            "isCorrect": true
+          },
+          {
+            "id": "292",
+            "text": "GET, POST, PUT, HEAD",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "How many guiding principals are there of REST?",
+        "answers": [
+          {
+            "id": "293",
+            "text": "3",
+            "isCorrect": false
+          },
+          {
+            "id": "294",
+            "text": "4",
+            "isCorrect": false
+          },
+          {
+            "id": "295",
+            "text": "6",
+            "isCorrect": true
+          },
+          {
+            "id": "296",
+            "text": "8",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "text": "What does “URI” stand for?",
+        "answers": [
+          {
+            "id": "297",
+            "text": "Uniform Resource Identifier",
+            "isCorrect": true
+          },
+          {
+            "id": "298",
+            "text": "Uniform Response Identifier",
+            "isCorrect": false
+          },
+          {
+            "id": "299",
+            "text": "Uniform Request Identity",
+            "isCorrect": false
+          },
+          {
+            "id": "300",
+            "text": "Union Resource Interface",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "text": "Which below is NOT a guiding principal of REST?",
+        "answers": [
+          {
+            "id": "301",
+            "text": "Stateless",
+            "isCorrect": false
+          },
+          {
+            "id": "302",
+            "text": "Uniform Identifier",
+            "isCorrect": true
+          },
+          {
+            "id": "303",
+            "text": "Client-server",
+            "isCorrect": false
+          },
+          {
+            "id": "304",
+            "text": "Cacheable",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "text": "As a key feature of REST session state data is kept entirely where?",
+        "answers": [
+          {
+            "id": "305",
+            "text": "On the server",
+            "isCorrect": false
+          },
+          {
+            "id": "306",
+            "text": "On the client",
+            "isCorrect": true
+          },
+          {
+            "id": "307",
+            "text": "In the database",
+            "isCorrect": false
+          },
+          {
+            "id": "308",
+            "text": "In the cloud",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "text": "What does CRUD stand for?",
+        "answers": [
+          {
+            "id": "309",
+            "text": "Create Read Update Drop",
+            "isCorrect": false
+          },
+          {
+            "id": "310",
+            "text": "Call Respond Upsert Drop",
+            "isCorrect": false
+          },
+          {
+            "id": "311",
+            "text": "Call Request Upsert Delete",
+            "isCorrect": false
+          },
+          {
+            "id": "312",
+            "text": "Create Read Update Delete",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "text": "What does a response code of 200 indicate?",
+        "answers": [
+          {
+            "id": "313",
+            "text": "Success",
+            "isCorrect": true
+          },
+          {
+            "id": "314",
+            "text": "Not Found",
+            "isCorrect": false
+          },
+          {
+            "id": "315",
+            "text": "Redirect",
+            "isCorrect": false
+          },
+          {
+            "id": "316",
+            "text": "Server Error",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "text": "What category is used for 4xx series response codes?",
+        "answers": [
+          {
+            "id": "317",
+            "text": "Server Error",
+            "isCorrect": false
+          },
+          {
+            "id": "318",
+            "text": "Informational",
+            "isCorrect": false
+          },
+          {
+            "id": "319",
+            "text": "Client Error",
+            "isCorrect": true
+          },
+          {
+            "id": "320",
+            "text": "Redirection",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  }
+]
