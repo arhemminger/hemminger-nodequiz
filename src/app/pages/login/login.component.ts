@@ -22,7 +22,6 @@ export class LoginComponent implements OnInit {
 
   form: FormGroup;
   errorMessage: string;
-  //validEmployeeIds = [1007, 1008, 1009, 1010, 1011];
 
   constructor(private router: Router, private cookieService: CookieService, private fb: FormBuilder, private http: HttpClient ) { }
 
@@ -49,12 +48,5 @@ export class LoginComponent implements OnInit {
       }
     })
 
-/*    if (this.validEmployeeIds.includes(parseInt(employeeId, 10))) {
-      this.cookieService.set('isAuthenticated', 'true', 1); //add a cookie to the users browser with a value of true and exp. 1 day.
-      this.router.navigate(['/']);
-      } else {
-        this.errorMessage = 'The employee ID you entered is invalid.';
-      }
-*/
     }
   }

@@ -9,7 +9,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
-
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-quiz',
@@ -17,37 +17,37 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./quiz.component.css']
 })
 export class QuizComponent implements OnInit {
-/**   Starting template  **/
-Answer: string;
-answers: string[] = ['Answer 1', 'Answer 2', 'Answer 3', 'Answer 4'];
 
-quizzes = [];
-quizId: number;
-
-getQuizzes(id) {
-  this.http.get('/assets/data/quizzes.json').subscribe(res => {
-    return this.quizzes.filter(quiz => quiz.id === id);
-  })
-}
-
-//quizId: number;
-//employeeId: number;
-//quizzes: any;
+quizId: string;
+employeeId: string;
+quizzes: any;
 quiz: any;
-//quizResults: any;
-//questions: any = [];
-//question: any = [];
+questions: any = [];
+question: any = [];
+quizResults: any;
 
-  constructor(private route: ActivatedRoute, private router: Router, private http: HttpClient) {
+  constructor(private route: ActivatedRoute, private router: Router,  private cookieService: CookieService, private http: HttpClient) {
+    this.quizId = this.route.snapshot.paramMap.get('quizId');
+    this.employeeId = this.cookieService.get('employeeId');
+    console.log("quizId is: " + this.quizId + "\nemployeeId is: " + this.employeeId);
+
     this.http.get('/api/quizzes/' + this.quizId).subscribe(res => {
-    this.quiz = res;
+    if (res){
+      console.log(res);
+      return this.quiz = res;
+    } else {
+      console.log("Error: Could not find quiz");
+    }
    })
   }
 
   ngOnInit() {
-    // No Subscription
-    this.quizId = parseInt(this.route.snapshot.paramMap.get("quizId"), 10);
-    console.log('quizId is: ' + this.quizId);
+
+  }
+
+  return()  {
+    this.router.navigate(['']);
   }
 
 }
+

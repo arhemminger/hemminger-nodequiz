@@ -22,10 +22,4 @@ export class DashboardComponent implements OnInit {
   ngOnInit() {
   }
 
-  // Quiz selection function
-  takeQuiz(quizId) {
-    this.router.navigate(['quiz/' + quizId]);
-    console.log(quizId);
-  }
-
 }

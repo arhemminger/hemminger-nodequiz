@@ -63,7 +63,7 @@ module.exports = "<!--\r\n============================================\r\n; Titl
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--\r\n============================================\r\n; Title:  Hemminger NodeQuiz\r\n; Author: Andrew Hemminger\r\n; Date:  27 September 2019\r\n; Description: NodeQuiz application\r\n;===========================================\r\n-->\r\n<h1>404 - Page Not Found</h1>\r\n"
+module.exports = "<!--\r\n============================================\r\n; Title:  Hemminger NodeQuiz\r\n; Author: Andrew Hemminger\r\n; Date:  27 September 2019\r\n; Description: NodeQuiz application\r\n;===========================================\r\n-->\r\n\r\n<div fxLayout=\"column\">\r\n  <mat-card fx-Flex style=\"margin-top: 10%; width: 50%; margin-left: 25%;\" class=\"mat-elevation-z8\">\r\n    <mat-card-title style=\"text-align: center; font-size: 48px\" class=\"mat-headline\">404 - Page Not Found</mat-card-title>\r\n      <br><br>\r\n      <mat-card-actions>\r\n        <button fxFlex mat-raised-button color=\"primary\" [routerLink]=\"['/']\">Return to Homepage</button>\r\n      </mat-card-actions>\r\n  </mat-card>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -74,7 +74,7 @@ module.exports = "<!--\r\n============================================\r\n; Titl
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--\r\n============================================\r\n; Title:  Hemminger NodeQuiz\r\n; Author: Andrew Hemminger\r\n; Date:  6 October 2019\r\n; Description: NodeQuiz application\r\n;===========================================\r\n-->\r\n<br>\r\n\r\n<div class=\"heading\">\r\n  <h2>Presentation {{presentationId}}</h2>\r\n</div>\r\n\r\n<div fxLayout=\"column\" style=\"margin-left: 10%; width: 80%;\">\r\n    <mat-card class=\"mat-elevation-z8\">\r\n        <mat-card-title>PrimeNG Carousel Quiz {{presentationId}}</mat-card-title>\r\n        <mat-card-content>\r\n            <p-carousel [value]=\"images\" numVisible=\"1\">\r\n                <ng-template style=\"text-align: center;\" let-item pTemplate=\"item\">\r\n                    <br><br>\r\n                    <div fxLayout=\"column\" fxLayoutAlign=\"center center\">\r\n                        <div fxFlex>\r\n                            <img src=\"./assets/images/{{item.image}}\" width=\"80%\">\r\n                        </div>\r\n                        <div fxFlex>\r\n                            <p>{{item.name}}</p>\r\n                        </div>\r\n                    </div><br><br>\r\n                </ng-template>\r\n            </p-carousel>\r\n        </mat-card-content>\r\n        <mat-card-actions>\r\n            <small>Presentation sourced from <a href=\"https://arhemminger.github.io/\" target=\"_blank\">https://arhemminger.github.io/</a></small>\r\n        </mat-card-actions>\r\n    </mat-card>\r\n</div>\r\n\r\n<div>\r\n  <br>\r\n</div>\r\n\r\n"
+module.exports = "<!--\r\n============================================\r\n; Title:  Hemminger NodeQuiz\r\n; Author: Andrew Hemminger\r\n; Date:  6 October 2019\r\n; Description: NodeQuiz application\r\n;===========================================\r\n-->\r\n<br>\r\n\r\n<div class=\"heading\">\r\n  <h2>Presentation {{presentationId}}</h2>\r\n</div>\r\n\r\n<div fxLayout=\"column\" style=\"margin-left: 10%; width: 80%;\">\r\n    <mat-card class=\"mat-elevation-z8\">\r\n        <mat-card-title>PrimeNG Carousel Quiz {{presentationId}}</mat-card-title>\r\n        <mat-card-content>\r\n            <p-carousel [value]=\"images\" numVisible=\"1\">\r\n                <ng-template style=\"text-align: center;\" let-item pTemplate=\"item\">\r\n                    <br><br>\r\n                    <div fxLayout=\"column\" fxLayoutAlign=\"center center\">\r\n                        <div fxFlex>\r\n                            <img src=\"./assets/images/{{item.image}}\" width=\"80%\">\r\n                        </div>\r\n                        <div fxFlex>\r\n                            <p>{{item.name}}</p>\r\n                        </div>\r\n                    </div><br><br>\r\n                </ng-template>\r\n            </p-carousel>\r\n        </mat-card-content>\r\n        <mat-card-actions>\r\n            <button mat-raised-button color=\"primary\" class=\"mat-button\" [routerLink]=\"['/quiz/' + this.quizId]\">Take Quiz</button>\r\n            <br>\r\n            <small>Presentation sourced from <a href=\"https://arhemminger.github.io/\" target=\"_blank\">https://arhemminger.github.io/</a></small>\r\n        </mat-card-actions>\r\n    </mat-card>\r\n</div>\r\n\r\n<div>\r\n  <br>\r\n</div>\r\n\r\n"
 
 /***/ }),
 
@@ -85,7 +85,7 @@ module.exports = "<!--\r\n============================================\r\n; Titl
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--\r\n============================================\r\n; Title:  Hemminger NodeQuiz\r\n; Author: Andrew Hemminger\r\n; Date:  2 October 2019\r\n; Description: NodeQuiz application\r\n;===========================================\r\n-->\r\n<div class=\"heading\">\r\n    <h1>Quiz</h1>\r\n  </div>\r\n\r\n  <br>\r\n\r\n  <!--quiz material card-->\r\n  <mat-card class=\"quiz-card\">\r\n    <mat-card-header>\r\n      <mat-card-title>Quiz 101</mat-card-title>\r\n      <mat-card-subtitle>JSON APIs</mat-card-subtitle>\r\n    </mat-card-header>\r\n    <hr>\r\n\r\n    <mat-card-content>\r\n\r\n      <div>\r\n        <h5>1.\tWhat does “JSON” stand for?</h5>\r\n        <div>\r\n          <mat-radio-group [(ngModel)]=\"Answers\" aria-labelledby=\"radio-group-label\" class=\"radio-group\">\r\n            <mat-radio-button *ngFor=\"let answer of answers\" [value]=\"answer\" class=\"radio-button\">{{answer}}</mat-radio-button>\r\n          </mat-radio-group>\r\n        </div>\r\n      </div>\r\n\r\n      <hr>\r\n\r\n    </mat-card-content>\r\n\r\n    <mat-card-actions>\r\n      <button mat-raised-button color=\"primary\" class=\"mat-button\">Submit</button>\r\n    </mat-card-actions>\r\n\r\n  </mat-card>\r\n\r\n<!-- Dynamic quiz card (in progress) -->\r\n<!--\r\n<mat-card class=\"quiz-card\">\r\n  <mat-card-header>\r\n    <mat-card-title style=\"text-align: center;\">{{quiz.name}}</mat-card-title>\r\n    <mat-card-subtitle style=\"text-align: center;\">{{quiz.description}}</mat-card-subtitle>\r\n  </mat-card-header>\r\n  <br>\r\n\r\n  <mat-card-content *ngIf=\"quiz.questions\">\r\n    <div fxLayout=\"column\">\r\n      <!-quiz form->\r\n      <form #quizForm=\"ngForm\" (ngSubmit)=\"onSubmit(quizForm.value); quizForm.reset();\">\r\n\r\n      <div fxLayout=\"column\">\r\n        <!-questions->\r\n        <mat-list>\r\n          <div fxLayout=\"row\" fxLayoutGap=\"10px\">\r\n            <p>Question: </p>\r\n            <p>{{question.text}}</p>\r\n          </div>\r\n        </mat-list>\r\n        <br>\r\n\r\n        <!-answers->\r\n        <div fxLayout=\"row\" fxLayoutGap=\"10px\">\r\n          <label>Answers: </label>\r\n          <div fxLayout=\"column\" fxLayoutGap=\"10px\">\r\n            <div *ngFor=\"let answer of question.answers\" style=\"flex-direction: column;\">\r\n              <input [{ngModel}]=\"questions[question.id]\" [checked]=\"questions[question.id]\" value=\"{{answer.id}};{{answer.isCorrect}}\" name=\"question{{question.id}}\" type=\"radio\" />\r\n              {{answer.text}}\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </mat-card-content>\r\n  </mat-card>\r\n  <br>\r\n\r\n  <!-submit button->\r\n  <mat-card-actions>\r\n      <button type=\"submit\" fxFlex mat-raised-button color=\"warn\">Submit</button>\r\n  </mat-card-actions>\r\n  <br>\r\n  </form>\r\n-->\r\n"
+module.exports = "<!--\r\n============================================\r\n; Title:  Hemminger NodeQuiz\r\n; Author: Andrew Hemminger\r\n; Date:  2 October 2019\r\n; Description: NodeQuiz application\r\n;===========================================\r\n-->\r\n<div class=\"heading\">\r\n    <h1>Quiz</h1>\r\n  </div>\r\n\r\n  <br>\r\n\r\n  <!--quiz material card-->\r\n  <mat-card class=\"quiz-card\">\r\n    <mat-card-header>\r\n      <mat-card-title>Quiz {{quizId}} - {{quiz.name}}</mat-card-title>\r\n      <mat-card-subtitle>{{quiz.description}}</mat-card-subtitle>\r\n    </mat-card-header>\r\n    <hr>\r\n\r\n    <mat-card-content>\r\n\r\n      <div>\r\n        <h5>1.\tWhat does “JSON” stand for?</h5>\r\n        <div>\r\n         <!-- <mat-radio-group [(ngModel)]=\"Answers\" aria-labelledby=\"radio-group-label\" class=\"radio-group\">\r\n            <mat-radio-button *ngFor=\"let answer of answers\" [value]=\"answer\" class=\"radio-button\">{{answer}}</mat-radio-button>\r\n          </mat-radio-group> -->\r\n        </div>\r\n      </div>\r\n\r\n      <hr>\r\n\r\n    </mat-card-content>\r\n\r\n    <mat-card-actions>\r\n      <button mat-raised-button color=\"primary\" class=\"mat-button\">Submit</button>\r\n      <button mat-raised-button color=\"warn\" class=\"mat-button\" (click)=\"return()\">Abandon</button>\r\n    </mat-card-actions>\r\n\r\n  </mat-card>\r\n\r\n<!-- Dynamic quiz card (in progress) -->\r\n<!--\r\n<mat-card class=\"quiz-card\">\r\n  <mat-card-header>\r\n    <mat-card-title style=\"text-align: center;\">{{quiz.name}}</mat-card-title>\r\n    <mat-card-subtitle style=\"text-align: center;\">{{quiz.description}}</mat-card-subtitle>\r\n  </mat-card-header>\r\n  <br>\r\n\r\n  <mat-card-content *ngIf=\"quiz.questions\">\r\n    <div fxLayout=\"column\">\r\n      <!-quiz form->\r\n      <form #quizForm=\"ngForm\" (ngSubmit)=\"onSubmit(quizForm.value); quizForm.reset();\">\r\n\r\n      <div fxLayout=\"column\">\r\n        <!-questions->\r\n        <mat-list>\r\n          <div fxLayout=\"row\" fxLayoutGap=\"10px\">\r\n            <p>Question: </p>\r\n            <p>{{question.text}}</p>\r\n          </div>\r\n        </mat-list>\r\n        <br>\r\n\r\n        <!-answers->\r\n        <div fxLayout=\"row\" fxLayoutGap=\"10px\">\r\n          <label>Answers: </label>\r\n          <div fxLayout=\"column\" fxLayoutGap=\"10px\">\r\n            <div *ngFor=\"let answer of question.answers\" style=\"flex-direction: column;\">\r\n              <input [{ngModel}]=\"questions[question.id]\" [checked]=\"questions[question.id]\" value=\"{{answer.id}};{{answer.isCorrect}}\" name=\"question{{question.id}}\" type=\"radio\" />\r\n              {{answer.text}}\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </mat-card-content>\r\n  </mat-card>\r\n  <br>\r\n\r\n  <!-submit button->\r\n  <mat-card-actions>\r\n      <button type=\"submit\" fxFlex mat-raised-button color=\"warn\">Submit</button>\r\n  </mat-card-actions>\r\n  <br>\r\n  </form>\r\n-->\r\n"
 
 /***/ }),
 
@@ -459,11 +459,6 @@ var DashboardComponent = /** @class */ (function () {
     }
     DashboardComponent.prototype.ngOnInit = function () {
     };
-    // Quiz selection function
-    DashboardComponent.prototype.takeQuiz = function (quizId) {
-        this.router.navigate(['quiz/' + quizId]);
-        console.log(quizId);
-    };
     DashboardComponent.ctorParameters = function () { return [
         { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] },
         { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] }
@@ -524,7 +519,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var LoginComponent = /** @class */ (function () {
-    //validEmployeeIds = [1007, 1008, 1009, 1010, 1011];
     function LoginComponent(router, cookieService, fb, http) {
         this.router = router;
         this.cookieService = cookieService;
@@ -553,13 +547,6 @@ var LoginComponent = /** @class */ (function () {
                 console.log(employeeId);
             }
         });
-        /*    if (this.validEmployeeIds.includes(parseInt(employeeId, 10))) {
-              this.cookieService.set('isAuthenticated', 'true', 1); //add a cookie to the users browser with a value of true and exp. 1 day.
-              this.router.navigate(['/']);
-              } else {
-                this.errorMessage = 'The employee ID you entered is invalid.';
-              }
-        */
     };
     LoginComponent.ctorParameters = function () { return [
         { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] },
@@ -789,6 +776,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var ngx_cookie_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ngx-cookie-service */ "./node_modules/ngx-cookie-service/ngx-cookie-service.es5.js");
 
 /*
 ============================================
@@ -801,35 +789,38 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 var QuizComponent = /** @class */ (function () {
-    //quizResults: any;
-    //questions: any = [];
-    //question: any = [];
-    function QuizComponent(route, router, http) {
+    function QuizComponent(route, router, cookieService, http) {
         var _this = this;
         this.route = route;
         this.router = router;
+        this.cookieService = cookieService;
         this.http = http;
-        this.answers = ['Answer 1', 'Answer 2', 'Answer 3', 'Answer 4'];
-        this.quizzes = [];
+        this.questions = [];
+        this.question = [];
+        this.quizId = this.route.snapshot.paramMap.get('quizId');
+        this.employeeId = this.cookieService.get('employeeId');
+        console.log("quizId is: " + this.quizId + "\nemployeeId is: " + this.employeeId);
         this.http.get('/api/quizzes/' + this.quizId).subscribe(function (res) {
-            _this.quiz = res;
+            if (res) {
+                console.log(res);
+                return _this.quiz = res;
+            }
+            else {
+                console.log("Error: Could not find quiz");
+            }
         });
     }
-    QuizComponent.prototype.getQuizzes = function (id) {
-        var _this = this;
-        this.http.get('/assets/data/quizzes.json').subscribe(function (res) {
-            return _this.quizzes.filter(function (quiz) { return quiz.id === id; });
-        });
-    };
     QuizComponent.prototype.ngOnInit = function () {
-        // No Subscription
-        this.quizId = parseInt(this.route.snapshot.paramMap.get("quizId"), 10);
-        console.log('quizId is: ' + this.quizId);
+    };
+    QuizComponent.prototype.return = function () {
+        this.router.navigate(['']);
     };
     QuizComponent.ctorParameters = function () { return [
         { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] },
         { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] },
+        { type: ngx_cookie_service__WEBPACK_IMPORTED_MODULE_4__["CookieService"] },
         { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"] }
     ]; };
     QuizComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
