@@ -15,13 +15,13 @@ import { AppRoutes } from './app.routing';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule, MatIconModule, MatMenuModule, MatToolbarModule, MatInputModule, MatFormFieldModule, MatCardModule} from "@angular/material";
+import {MatListModule} from '@angular/material/list';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { MatRadioModule } from '@angular/material/radio';
 
 import { AuthGuard } from './shared/guards/auth.guard';
 import { CookieService } from 'ngx-cookie-service';
 import { CarouselModule } from 'primeng/carousel';
-//import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 // components
 import { AppComponent } from './app.component';
@@ -33,6 +33,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { AuthLayoutComponent } from './shared/auth-layout/auth-layout.component';
 import { QuizComponent } from './pages/quiz/quiz.component';
 import { PresentationComponent } from './pages/presentation/presentation.component';
+import { QuizResultDialogComponent } from './pages/quiz-result-dialog/quiz-result-dialog.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { PresentationComponent } from './pages/presentation/presentation.compone
     NotFoundComponent,
     AuthLayoutComponent,
     QuizComponent,
-    PresentationComponent
+    PresentationComponent,
+    QuizResultDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -62,12 +64,13 @@ import { PresentationComponent } from './pages/presentation/presentation.compone
     MatCardModule,
     FlexLayoutModule,
     CarouselModule,
-    MatRadioModule
+    MatRadioModule,
+    MatListModule
   ],
   providers: [
     CookieService,
     AuthGuard
-  ], //, {provide: LocationStrategy, useClass: HashLocationStrategy}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

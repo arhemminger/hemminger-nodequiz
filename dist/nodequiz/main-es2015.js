@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--\r\n============================================\r\n; Title:  Hemminger NodeQuiz\r\n; Author: Andrew Hemminger\r\n; Date:  27 September 2019\r\n; Description: NodeQuiz application\r\n;===========================================\r\n-->\r\n<p>cumulative-summary works!</p>\r\n"
+module.exports = "\r\n\r\n<div fxLayout=\"column\">\r\n    <mat-card fx-Flex style=\"margin-top: 10%; width: 50%; margin-left: 25%;\" class=\"mat-elevation-z8\">\r\n      <mat-card-title style=\"text-align: center; font-size: 48px\" class=\"mat-headline\">Cumulative Summary</mat-card-title>\r\n        <br><br>\r\n        <mat-card-content>\r\n            <!--table goes here-->\r\n        </mat-card-content>\r\n        <mat-card-actions>\r\n          <button fxFlex mat-raised-button color=\"primary\" [routerLink]=\"['/']\">Return to Homepage</button>\r\n        </mat-card-actions>\r\n    </mat-card>\r\n  </div>\r\n"
 
 /***/ }),
 
@@ -74,7 +74,18 @@ module.exports = "<!--\r\n============================================\r\n; Titl
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--\r\n============================================\r\n; Title:  Hemminger NodeQuiz\r\n; Author: Andrew Hemminger\r\n; Date:  6 October 2019\r\n; Description: NodeQuiz application\r\n;===========================================\r\n-->\r\n<br>\r\n\r\n<div class=\"heading\">\r\n  <h2>Presentation {{presentationId}}</h2>\r\n</div>\r\n\r\n<div fxLayout=\"column\" style=\"margin-left: 10%; width: 80%;\">\r\n    <mat-card class=\"mat-elevation-z8\">\r\n        <mat-card-title>PrimeNG Carousel Quiz {{presentationId}}</mat-card-title>\r\n        <mat-card-content>\r\n            <p-carousel [value]=\"images\" numVisible=\"1\">\r\n                <ng-template style=\"text-align: center;\" let-item pTemplate=\"item\">\r\n                    <br><br>\r\n                    <div fxLayout=\"column\" fxLayoutAlign=\"center center\">\r\n                        <div fxFlex>\r\n                            <img src=\"./assets/images/{{item.image}}\" width=\"80%\">\r\n                        </div>\r\n                        <div fxFlex>\r\n                            <p>{{item.name}}</p>\r\n                        </div>\r\n                    </div><br><br>\r\n                </ng-template>\r\n            </p-carousel>\r\n        </mat-card-content>\r\n        <mat-card-actions>\r\n            <button mat-raised-button color=\"primary\" class=\"mat-button\" [routerLink]=\"['/quiz/' + this.quizId]\">Take Quiz</button>\r\n            <br>\r\n            <small>Presentation sourced from <a href=\"https://arhemminger.github.io/\" target=\"_blank\">https://arhemminger.github.io/</a></small>\r\n        </mat-card-actions>\r\n    </mat-card>\r\n</div>\r\n\r\n<div>\r\n  <br>\r\n</div>\r\n\r\n"
+module.exports = "<!--\r\n============================================\r\n; Title:  Hemminger NodeQuiz\r\n; Author: Andrew Hemminger\r\n; Date:  6 October 2019\r\n; Description: NodeQuiz application\r\n;===========================================\r\n-->\r\n<br>\r\n\r\n<div class=\"heading\">\r\n  <h2>Presentation {{presentationId}}</h2>\r\n</div>\r\n\r\n<div fxLayout=\"column\" style=\"margin-left: 10%; width: 80%;\">\r\n    <mat-card class=\"mat-elevation-z8\">\r\n        <mat-card-title>PrimeNG Carousel Quiz {{presentationId}}</mat-card-title>\r\n        <mat-card-content>\r\n            <p-carousel [value]=\"images\" numVisible=\"1\">\r\n                <ng-template style=\"text-align: center;\" let-item pTemplate=\"item\">\r\n                    <br><br>\r\n                    <div fxLayout=\"column\" fxLayoutAlign=\"center center\">\r\n                        <div fxFlex>\r\n                            <img src=\"./assets/images/{{item.image}}\" width=\"80%\">\r\n                        </div>\r\n                        <div fxFlex>\r\n                            <p>{{item.name}}</p>\r\n                        </div>\r\n                    </div><br><br>\r\n                </ng-template>\r\n            </p-carousel>\r\n        </mat-card-content>\r\n        <mat-card-actions>\r\n            <button mat-raised-button color=\"primary\" class=\"mat-button\" [routerLink]=\"['/quiz/' + this.presentationId]\">Take Quiz</button>\r\n            <br>\r\n            <small>Presentation sourced from <a href=\"https://arhemminger.github.io/\" target=\"_blank\">https://arhemminger.github.io/</a></small>\r\n        </mat-card-actions>\r\n    </mat-card>\r\n</div>\r\n\r\n<div>\r\n  <br>\r\n</div>\r\n\r\n"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/pages/quiz-result-dialog/quiz-result-dialog.component.html":
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/pages/quiz-result-dialog/quiz-result-dialog.component.html ***!
+  \******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div fxLayout=\"column\">\r\n    <mat-card fx-Flex style=\"margin-top: 10%; width: 50%; margin-left: 25%;\" class=\"mat-elevation-z8\">\r\n      <mat-card-title style=\"text-align: center; font-size: 48px\" class=\"mat-headline\">Quiz Result</mat-card-title>\r\n        <br><br>\r\n        <mat-card-content>\r\n          <!--quizResults go here-->\r\n        </mat-card-content>\r\n        <mat-card-actions>\r\n          <button fxFlex mat-raised-button color=\"primary\" [routerLink]=\"['/']\">Return to Homepage</button>\r\n        </mat-card-actions>\r\n    </mat-card>\r\n  </div>\r\n"
 
 /***/ }),
 
@@ -85,7 +96,7 @@ module.exports = "<!--\r\n============================================\r\n; Titl
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--\r\n============================================\r\n; Title:  Hemminger NodeQuiz\r\n; Author: Andrew Hemminger\r\n; Date:  2 October 2019\r\n; Description: NodeQuiz application\r\n;===========================================\r\n-->\r\n<div class=\"heading\">\r\n    <h1>Quiz</h1>\r\n  </div>\r\n\r\n  <br>\r\n\r\n  <!--quiz material card-->\r\n  <mat-card class=\"quiz-card\">\r\n    <mat-card-header>\r\n      <mat-card-title>Quiz {{quizId}} - {{quiz.name}}</mat-card-title>\r\n      <mat-card-subtitle>{{quiz.description}}</mat-card-subtitle>\r\n    </mat-card-header>\r\n    <hr>\r\n\r\n    <mat-card-content>\r\n\r\n      <div>\r\n        <h5>1.\tWhat does “JSON” stand for?</h5>\r\n        <div>\r\n         <!-- <mat-radio-group [(ngModel)]=\"Answers\" aria-labelledby=\"radio-group-label\" class=\"radio-group\">\r\n            <mat-radio-button *ngFor=\"let answer of answers\" [value]=\"answer\" class=\"radio-button\">{{answer}}</mat-radio-button>\r\n          </mat-radio-group> -->\r\n        </div>\r\n      </div>\r\n\r\n      <hr>\r\n\r\n    </mat-card-content>\r\n\r\n    <mat-card-actions>\r\n      <button mat-raised-button color=\"primary\" class=\"mat-button\">Submit</button>\r\n      <button mat-raised-button color=\"warn\" class=\"mat-button\" (click)=\"return()\">Abandon</button>\r\n    </mat-card-actions>\r\n\r\n  </mat-card>\r\n\r\n<!-- Dynamic quiz card (in progress) -->\r\n<!--\r\n<mat-card class=\"quiz-card\">\r\n  <mat-card-header>\r\n    <mat-card-title style=\"text-align: center;\">{{quiz.name}}</mat-card-title>\r\n    <mat-card-subtitle style=\"text-align: center;\">{{quiz.description}}</mat-card-subtitle>\r\n  </mat-card-header>\r\n  <br>\r\n\r\n  <mat-card-content *ngIf=\"quiz.questions\">\r\n    <div fxLayout=\"column\">\r\n      <!-quiz form->\r\n      <form #quizForm=\"ngForm\" (ngSubmit)=\"onSubmit(quizForm.value); quizForm.reset();\">\r\n\r\n      <div fxLayout=\"column\">\r\n        <!-questions->\r\n        <mat-list>\r\n          <div fxLayout=\"row\" fxLayoutGap=\"10px\">\r\n            <p>Question: </p>\r\n            <p>{{question.text}}</p>\r\n          </div>\r\n        </mat-list>\r\n        <br>\r\n\r\n        <!-answers->\r\n        <div fxLayout=\"row\" fxLayoutGap=\"10px\">\r\n          <label>Answers: </label>\r\n          <div fxLayout=\"column\" fxLayoutGap=\"10px\">\r\n            <div *ngFor=\"let answer of question.answers\" style=\"flex-direction: column;\">\r\n              <input [{ngModel}]=\"questions[question.id]\" [checked]=\"questions[question.id]\" value=\"{{answer.id}};{{answer.isCorrect}}\" name=\"question{{question.id}}\" type=\"radio\" />\r\n              {{answer.text}}\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </mat-card-content>\r\n  </mat-card>\r\n  <br>\r\n\r\n  <!-submit button->\r\n  <mat-card-actions>\r\n      <button type=\"submit\" fxFlex mat-raised-button color=\"warn\">Submit</button>\r\n  </mat-card-actions>\r\n  <br>\r\n  </form>\r\n-->\r\n"
+module.exports = "<!--\r\n============================================\r\n; Title:  Hemminger NodeQuiz\r\n; Author: Andrew Hemminger\r\n; Date:  2 October 2019\r\n; Description: NodeQuiz application\r\n;===========================================\r\n-->\r\n<div class=\"heading\">\r\n    <h1>Quiz</h1>\r\n  </div>\r\n\r\n  <br>\r\n\r\n  <!--quiz material card-->\r\n  <mat-card *ngIf='quiz' class=\"quiz-card\">\r\n    <mat-card-header>\r\n      <mat-card-title>Quiz {{quizId}} - {{quiz.name}}</mat-card-title>\r\n      <mat-card-subtitle>{{quiz.description}}</mat-card-subtitle>\r\n    </mat-card-header>\r\n    <hr>\r\n\r\n    <!-- root mat card content -->\r\n    <mat-card-content >\r\n      <!--flex-layout column -->\r\n      <div fxLayout=\"column\">\r\n        <!-- quiz form -->\r\n        <form #quizForm=\"ngForm\" (ngSubmit)=\"onSubmit(quizForm.value); quizForm.reset();\">\r\n          <div *ngFor=\"let question of quiz.questions\">\r\n            <mat-card class=\"mat-elevation-z0\">\r\n              <mat-card-content>\r\n                <div fxLayout=\"column\">\r\n                  <!--questions-->\r\n                  <h4>Question {{question.id}}:</h4>\r\n                  <mat-list>\r\n                    <mat-list-item>\r\n                      <p matLine>{{question.text}}</p>\r\n                    </mat-list-item>\r\n                  </mat-list>\r\n\r\n                  <!--answers-->\r\n                  <div>\r\n                    <mat-radio-group [(ngModel)]=\"Answers\" name=\"question._id\" aria-labelledby=\"radio-group-label\" class=\"radio-group\">\r\n                      <mat-radio-button class=\"radio-button\" *ngFor=\"let answer of question.answers\" [value]=\"answer.id\" [checked]=\"answer.id\">{{answer.text}}</mat-radio-button>\r\n                      <div>Selected answerId: {{Answers}}</div>\r\n                    </mat-radio-group>\r\n                  </div>\r\n\r\n                </div>\r\n                <mat-divider></mat-divider>\r\n              </mat-card-content>\r\n            </mat-card>\r\n          </div>\r\n\r\n        </form>\r\n\r\n      </div>\r\n      </mat-card-content>\r\n\r\n    <mat-card-actions>\r\n      <button mat-raised-button color=\"primary\" class=\"mat-button\" type=\"submit\" [routerLink]=\"['/quiz-result']\">Submit</button>\r\n      <button mat-raised-button color=\"warn\" class=\"mat-button\" (click)=\"return()\">Abandon</button>\r\n    </mat-card-actions>\r\n\r\n  </mat-card>\r\n\r\n"
 
 /***/ }),
 
@@ -183,21 +194,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
-/* harmony import */ var _angular_flex_layout__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/flex-layout */ "./node_modules/@angular/flex-layout/esm2015/flex-layout.js");
-/* harmony import */ var _angular_material_radio__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/material/radio */ "./node_modules/@angular/material/esm2015/radio.js");
-/* harmony import */ var _shared_guards_auth_guard__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./shared/guards/auth.guard */ "./src/app/shared/guards/auth.guard.ts");
-/* harmony import */ var ngx_cookie_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ngx-cookie-service */ "./node_modules/ngx-cookie-service/ngx-cookie-service.js");
-/* harmony import */ var primeng_carousel__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! primeng/carousel */ "./node_modules/primeng/carousel.js");
-/* harmony import */ var primeng_carousel__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(primeng_carousel__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _shared__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./shared */ "./src/app/shared/index.ts");
-/* harmony import */ var _pages_cumulative_summary_cumulative_summary_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./pages/cumulative-summary/cumulative-summary.component */ "./src/app/pages/cumulative-summary/cumulative-summary.component.ts");
-/* harmony import */ var _pages_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./pages/dashboard/dashboard.component */ "./src/app/pages/dashboard/dashboard.component.ts");
-/* harmony import */ var _pages_login_login_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./pages/login/login.component */ "./src/app/pages/login/login.component.ts");
-/* harmony import */ var _pages_not_found_not_found_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./pages/not-found/not-found.component */ "./src/app/pages/not-found/not-found.component.ts");
-/* harmony import */ var _shared_auth_layout_auth_layout_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./shared/auth-layout/auth-layout.component */ "./src/app/shared/auth-layout/auth-layout.component.ts");
-/* harmony import */ var _pages_quiz_quiz_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./pages/quiz/quiz.component */ "./src/app/pages/quiz/quiz.component.ts");
-/* harmony import */ var _pages_presentation_presentation_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./pages/presentation/presentation.component */ "./src/app/pages/presentation/presentation.component.ts");
+/* harmony import */ var _angular_material_list__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/list */ "./node_modules/@angular/material/esm2015/list.js");
+/* harmony import */ var _angular_flex_layout__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/flex-layout */ "./node_modules/@angular/flex-layout/esm2015/flex-layout.js");
+/* harmony import */ var _angular_material_radio__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/material/radio */ "./node_modules/@angular/material/esm2015/radio.js");
+/* harmony import */ var _shared_guards_auth_guard__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./shared/guards/auth.guard */ "./src/app/shared/guards/auth.guard.ts");
+/* harmony import */ var ngx_cookie_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ngx-cookie-service */ "./node_modules/ngx-cookie-service/ngx-cookie-service.js");
+/* harmony import */ var primeng_carousel__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! primeng/carousel */ "./node_modules/primeng/carousel.js");
+/* harmony import */ var primeng_carousel__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(primeng_carousel__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _shared__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./shared */ "./src/app/shared/index.ts");
+/* harmony import */ var _pages_cumulative_summary_cumulative_summary_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./pages/cumulative-summary/cumulative-summary.component */ "./src/app/pages/cumulative-summary/cumulative-summary.component.ts");
+/* harmony import */ var _pages_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./pages/dashboard/dashboard.component */ "./src/app/pages/dashboard/dashboard.component.ts");
+/* harmony import */ var _pages_login_login_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./pages/login/login.component */ "./src/app/pages/login/login.component.ts");
+/* harmony import */ var _pages_not_found_not_found_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./pages/not-found/not-found.component */ "./src/app/pages/not-found/not-found.component.ts");
+/* harmony import */ var _shared_auth_layout_auth_layout_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./shared/auth-layout/auth-layout.component */ "./src/app/shared/auth-layout/auth-layout.component.ts");
+/* harmony import */ var _pages_quiz_quiz_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./pages/quiz/quiz.component */ "./src/app/pages/quiz/quiz.component.ts");
+/* harmony import */ var _pages_presentation_presentation_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./pages/presentation/presentation.component */ "./src/app/pages/presentation/presentation.component.ts");
+/* harmony import */ var _pages_quiz_result_dialog_quiz_result_dialog_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./pages/quiz-result-dialog/quiz-result-dialog.component */ "./src/app/pages/quiz-result-dialog/quiz-result-dialog.component.ts");
 
 /*
 ============================================
@@ -221,8 +234,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-//import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+
 // components
+
 
 
 
@@ -237,15 +251,16 @@ let AppModule = class AppModule {
 AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
         declarations: [
-            _app_component__WEBPACK_IMPORTED_MODULE_14__["AppComponent"],
-            _shared__WEBPACK_IMPORTED_MODULE_15__["BaseLayoutComponent"],
-            _pages_cumulative_summary_cumulative_summary_component__WEBPACK_IMPORTED_MODULE_16__["CumulativeSummaryComponent"],
-            _pages_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_17__["DashboardComponent"],
-            _pages_login_login_component__WEBPACK_IMPORTED_MODULE_18__["LoginComponent"],
-            _pages_not_found_not_found_component__WEBPACK_IMPORTED_MODULE_19__["NotFoundComponent"],
-            _shared_auth_layout_auth_layout_component__WEBPACK_IMPORTED_MODULE_20__["AuthLayoutComponent"],
-            _pages_quiz_quiz_component__WEBPACK_IMPORTED_MODULE_21__["QuizComponent"],
-            _pages_presentation_presentation_component__WEBPACK_IMPORTED_MODULE_22__["PresentationComponent"]
+            _app_component__WEBPACK_IMPORTED_MODULE_15__["AppComponent"],
+            _shared__WEBPACK_IMPORTED_MODULE_16__["BaseLayoutComponent"],
+            _pages_cumulative_summary_cumulative_summary_component__WEBPACK_IMPORTED_MODULE_17__["CumulativeSummaryComponent"],
+            _pages_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_18__["DashboardComponent"],
+            _pages_login_login_component__WEBPACK_IMPORTED_MODULE_19__["LoginComponent"],
+            _pages_not_found_not_found_component__WEBPACK_IMPORTED_MODULE_20__["NotFoundComponent"],
+            _shared_auth_layout_auth_layout_component__WEBPACK_IMPORTED_MODULE_21__["AuthLayoutComponent"],
+            _pages_quiz_quiz_component__WEBPACK_IMPORTED_MODULE_22__["QuizComponent"],
+            _pages_presentation_presentation_component__WEBPACK_IMPORTED_MODULE_23__["PresentationComponent"],
+            _pages_quiz_result_dialog_quiz_result_dialog_component__WEBPACK_IMPORTED_MODULE_24__["QuizResultDialogComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -261,15 +276,16 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatInputModule"],
             _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatFormFieldModule"],
             _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatCardModule"],
-            _angular_flex_layout__WEBPACK_IMPORTED_MODULE_9__["FlexLayoutModule"],
-            primeng_carousel__WEBPACK_IMPORTED_MODULE_13__["CarouselModule"],
-            _angular_material_radio__WEBPACK_IMPORTED_MODULE_10__["MatRadioModule"]
+            _angular_flex_layout__WEBPACK_IMPORTED_MODULE_10__["FlexLayoutModule"],
+            primeng_carousel__WEBPACK_IMPORTED_MODULE_14__["CarouselModule"],
+            _angular_material_radio__WEBPACK_IMPORTED_MODULE_11__["MatRadioModule"],
+            _angular_material_list__WEBPACK_IMPORTED_MODULE_9__["MatListModule"]
         ],
         providers: [
-            ngx_cookie_service__WEBPACK_IMPORTED_MODULE_12__["CookieService"],
-            _shared_guards_auth_guard__WEBPACK_IMPORTED_MODULE_11__["AuthGuard"]
+            ngx_cookie_service__WEBPACK_IMPORTED_MODULE_13__["CookieService"],
+            _shared_guards_auth_guard__WEBPACK_IMPORTED_MODULE_12__["AuthGuard"]
         ],
-        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_14__["AppComponent"]]
+        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_15__["AppComponent"]]
     })
 ], AppModule);
 
@@ -292,11 +308,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_login_login_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/login/login.component */ "./src/app/pages/login/login.component.ts");
 /* harmony import */ var _pages_not_found_not_found_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/not-found/not-found.component */ "./src/app/pages/not-found/not-found.component.ts");
 /* harmony import */ var _pages_quiz_quiz_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/quiz/quiz.component */ "./src/app/pages/quiz/quiz.component.ts");
-/* harmony import */ var _shared_auth_layout_auth_layout_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./shared/auth-layout/auth-layout.component */ "./src/app/shared/auth-layout/auth-layout.component.ts");
-/* harmony import */ var _shared__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./shared */ "./src/app/shared/index.ts");
-/* harmony import */ var _shared_guards_auth_guard__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./shared/guards/auth.guard */ "./src/app/shared/guards/auth.guard.ts");
-/* harmony import */ var _pages_presentation_presentation_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/presentation/presentation.component */ "./src/app/pages/presentation/presentation.component.ts");
+/* harmony import */ var _pages_quiz_result_dialog_quiz_result_dialog_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/quiz-result-dialog/quiz-result-dialog.component */ "./src/app/pages/quiz-result-dialog/quiz-result-dialog.component.ts");
+/* harmony import */ var _shared_auth_layout_auth_layout_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./shared/auth-layout/auth-layout.component */ "./src/app/shared/auth-layout/auth-layout.component.ts");
+/* harmony import */ var _shared__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./shared */ "./src/app/shared/index.ts");
+/* harmony import */ var _shared_guards_auth_guard__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./shared/guards/auth.guard */ "./src/app/shared/guards/auth.guard.ts");
+/* harmony import */ var _pages_presentation_presentation_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/presentation/presentation.component */ "./src/app/pages/presentation/presentation.component.ts");
 // pages imports
+
 
 
 
@@ -310,35 +328,40 @@ __webpack_require__.r(__webpack_exports__);
 const AppRoutes = [
     {
         path: '',
-        component: _shared__WEBPACK_IMPORTED_MODULE_6__["BaseLayoutComponent"],
+        component: _shared__WEBPACK_IMPORTED_MODULE_7__["BaseLayoutComponent"],
         children: [
             {
                 path: '',
                 component: _pages_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_1__["DashboardComponent"],
-                canActivate: [_shared_guards_auth_guard__WEBPACK_IMPORTED_MODULE_7__["AuthGuard"]],
+                canActivate: [_shared_guards_auth_guard__WEBPACK_IMPORTED_MODULE_8__["AuthGuard"]],
                 children: [
                     {
                         path: 'presentation/:presentationId',
-                        component: _pages_presentation_presentation_component__WEBPACK_IMPORTED_MODULE_8__["PresentationComponent"],
-                        canActivate: [_shared_guards_auth_guard__WEBPACK_IMPORTED_MODULE_7__["AuthGuard"]]
+                        component: _pages_presentation_presentation_component__WEBPACK_IMPORTED_MODULE_9__["PresentationComponent"],
+                        canActivate: [_shared_guards_auth_guard__WEBPACK_IMPORTED_MODULE_8__["AuthGuard"]]
                     },
                 ]
             },
             {
                 path: 'quiz/:quizId',
                 component: _pages_quiz_quiz_component__WEBPACK_IMPORTED_MODULE_4__["QuizComponent"],
-                canActivate: [_shared_guards_auth_guard__WEBPACK_IMPORTED_MODULE_7__["AuthGuard"]]
+                canActivate: [_shared_guards_auth_guard__WEBPACK_IMPORTED_MODULE_8__["AuthGuard"]]
             },
             {
                 path: 'cumulative-summary',
                 component: _pages_cumulative_summary_cumulative_summary_component__WEBPACK_IMPORTED_MODULE_0__["CumulativeSummaryComponent"],
-                canActivate: [_shared_guards_auth_guard__WEBPACK_IMPORTED_MODULE_7__["AuthGuard"]]
+                canActivate: [_shared_guards_auth_guard__WEBPACK_IMPORTED_MODULE_8__["AuthGuard"]]
+            },
+            {
+                path: 'quiz-result',
+                component: _pages_quiz_result_dialog_quiz_result_dialog_component__WEBPACK_IMPORTED_MODULE_5__["QuizResultDialogComponent"],
+                canActivate: [_shared_guards_auth_guard__WEBPACK_IMPORTED_MODULE_8__["AuthGuard"]]
             }
         ]
     },
     {
         path: 'session',
-        component: _shared_auth_layout_auth_layout_component__WEBPACK_IMPORTED_MODULE_5__["AuthLayoutComponent"],
+        component: _shared_auth_layout_auth_layout_component__WEBPACK_IMPORTED_MODULE_6__["AuthLayoutComponent"],
         children: [
             {
                 path: 'login',
@@ -737,6 +760,56 @@ PresentationComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/app/pages/quiz-result-dialog/quiz-result-dialog.component.css":
+/*!***************************************************************************!*\
+  !*** ./src/app/pages/quiz-result-dialog/quiz-result-dialog.component.css ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL3F1aXotcmVzdWx0LWRpYWxvZy9xdWl6LXJlc3VsdC1kaWFsb2cuY29tcG9uZW50LmNzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/pages/quiz-result-dialog/quiz-result-dialog.component.ts":
+/*!**************************************************************************!*\
+  !*** ./src/app/pages/quiz-result-dialog/quiz-result-dialog.component.ts ***!
+  \**************************************************************************/
+/*! exports provided: QuizResultDialogComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QuizResultDialogComponent", function() { return QuizResultDialogComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+/*
+============================================
+; Title:  Hemminger NodeQuiz
+; Author: Andrew Hemminger
+; Date:  20 October 2019
+; Description: NodeQuiz application
+;===========================================
+*/
+
+let QuizResultDialogComponent = class QuizResultDialogComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+QuizResultDialogComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-quiz-result-dialog',
+        template: __webpack_require__(/*! raw-loader!./quiz-result-dialog.component.html */ "./node_modules/raw-loader/index.js!./src/app/pages/quiz-result-dialog/quiz-result-dialog.component.html"),
+        styles: [__webpack_require__(/*! ./quiz-result-dialog.component.css */ "./src/app/pages/quiz-result-dialog/quiz-result-dialog.component.css")]
+    })
+], QuizResultDialogComponent);
+
+
+
+/***/ }),
+
 /***/ "./src/app/pages/quiz/quiz.component.css":
 /*!***********************************************!*\
   !*** ./src/app/pages/quiz/quiz.component.css ***!
@@ -776,8 +849,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+//import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+//import * as moment from 'moment';
 let QuizComponent = class QuizComponent {
-    constructor(route, router, cookieService, http) {
+    constructor(route, router, cookieService, http //, public dialog: MatDialog
+    ) {
         this.route = route;
         this.router = router;
         this.cookieService = cookieService;
@@ -802,12 +878,37 @@ let QuizComponent = class QuizComponent {
     return() {
         this.router.navigate(['']);
     }
+    onSubmit(form) {
+        let quizScore = 0;
+        let totalPossible = 100;
+        this.quizResults = form;
+        this.quizResults['employeeId'] = this.employeeId;
+        this.quizResults['quizId'] = this.quizId;
+        this.cookieService.set('quizResults', this.quizResults); //save quizResults in cookies
+        this.router.navigate(['/quiz-result']);
+        console.log(this.quizResults);
+        /*
+        // open dialog and display results
+        const dialogRef = this.dialog.open(QuizResultDialog, {
+          data: {
+            quizResults: this.quizResults
+          },
+          disableClose: true,
+          width: '800px'
+        });
+    
+        dialogRef.afterClosed().subscribe(result => {
+            console.log(this.quizResults);
+        })
+        */
+    }
 };
 QuizComponent.ctorParameters = () => [
     { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] },
     { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] },
     { type: ngx_cookie_service__WEBPACK_IMPORTED_MODULE_4__["CookieService"] },
-    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"] }
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"] //, public dialog: MatDialog
+     }
 ];
 QuizComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -817,6 +918,17 @@ QuizComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     })
 ], QuizComponent);
 
+/*
+@Component({
+  selector: 'quiz-result-dialog',
+  templateUrl: 'quiz-result-dialog.html',
+})
+export class QuizResultDialog {
+
+  constructor(public dialogRef: MatDialogRef<QuizResultDialog>) {}
+
+  }
+*/
 
 
 /***/ }),

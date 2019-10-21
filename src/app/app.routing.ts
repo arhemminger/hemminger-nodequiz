@@ -13,6 +13,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './pages/login/login.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { QuizComponent } from './pages/quiz/quiz.component';
+import { QuizResultDialogComponent } from './pages/quiz-result-dialog/quiz-result-dialog.component';
 // shared imports
 import { AuthLayoutComponent } from './shared/auth-layout/auth-layout.component';
 import { BaseLayoutComponent } from './shared';
@@ -22,7 +23,7 @@ import { PresentationComponent } from './pages/presentation/presentation.compone
 
 export const AppRoutes: Routes = [
   {
-    path: '', //:username
+    path: '',
     component: BaseLayoutComponent,
     children: [
       {
@@ -45,7 +46,12 @@ export const AppRoutes: Routes = [
       {
         path: 'cumulative-summary',
         component: CumulativeSummaryComponent,
-        canActivate: [AuthGuard]
+       canActivate: [AuthGuard]
+      },
+      {
+        path: 'quiz-result',
+        component: QuizResultDialogComponent,
+       canActivate: [AuthGuard]
       }
     ]
   },
